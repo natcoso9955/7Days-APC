@@ -1,5 +1,11 @@
 
 # 7days-APC: 7 Days Afterlife Prerequisite Checker
+[![GitHub Build](https://github.com/gorcon/rcon-cli/workflows/build/badge.svg)](https://github.com/gorcon/rcon-cli/actions)
+![GitHub License](https://img.shields.io/github/license/natcoso9955/7Days-APC)
+![GitHub top language](https://img.shields.io/github/languages/top/natcoso9955/7Days-APC)
+![GitHub Created At](https://img.shields.io/github/created-at/natcoso9955/7Days-APC)
+![GitHub last commit](https://img.shields.io/github/last-commit/natcoso9955/7Days-APC)
+
 
 **7days-APC** (7 Days Afterlife Prerequisite Checker) is a utility designed to help Linux users prepare their systems to run the **Afterlife** mod for the game *7 Days to Die*. This script automates the process of installing the required dependency, `libgdiplus`, which is essential for the mod to function properly on Linux.
 
