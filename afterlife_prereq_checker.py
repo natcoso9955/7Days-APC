@@ -20,14 +20,13 @@ def detect_package_manager():
     """Identify the available package manager."""
     if shutil.which("apt"):
         return "apt"
-    elif shutil.which("yum"):
+    if shutil.which("yum"):
         return "yum"
-    elif shutil.which("dnf"):
+    if shutil.which("dnf"):
         return "dnf"
-    elif shutil.which("pacman"):
+    if shutil.which("pacman"):
         return "pacman"
-    else:
-        return None
+    return None
 
 def install_libgdiplus(pkg_manager):
     """Install libgdiplus using the appropriate package manager."""
@@ -53,12 +52,12 @@ def install_libgdiplus(pkg_manager):
 def verify_installation():
     """Verify that libgdiplus is installed."""
     try:
-        output = subprocess.run(["ldconfig", "-p"], stdout=subprocess.PIPE, text=True)
+        output = subprocess.run(["ldconfig", "-p"], stdout=subprocess.PIPE, text=True, check=True)
         if "libgdiplus" in output.stdout:
             print(f"{GREEN}libgdiplus is installed and available.{NC}")
         else:
             raise FileNotFoundError
-    except Exception:
+    except (subprocess.CalledProcessError, FileNotFoundError):
         print(f"{RED}libgdiplus installation verification failed. Please check manually.{NC}")
         sys.exit(1)
 

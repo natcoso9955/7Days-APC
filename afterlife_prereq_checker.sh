@@ -2,7 +2,7 @@
 
 # 7days-APC: 7 Days Afterlife Prerequisite Checker
 # Author: Nathaniel Cosford
-# Version: v1.0.0
+# Version: v1.0.1
 # License: GNU GPL v3
 # Description: Checks and installs libgdiplus, with support for multiple Linux distros and package managers.
 
