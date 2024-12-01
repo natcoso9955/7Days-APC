@@ -38,12 +38,12 @@ The project aims to provide a centralized, evolving resource for Linux (and pote
 
 2. **Make the Script Executable**:
    ```bash
-   chmod +x afterlife-prereq-checker.sh
+   chmod +x afterlife_prereq_checker.sh
    ```
 
 3. **Run the Script with Root Privileges**:
    ```bash
-   sudo ./afterlife-prereq-checker.sh
+   sudo ./afterlife_prereq_checker.sh
    ```
 
 4. **Follow On-Screen Prompts**:
