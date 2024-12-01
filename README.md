@@ -27,7 +27,7 @@ The project aims to provide a centralized, evolving resource for Linux (and pote
 ### Prerequisites
 
 1. A Linux system with administrative (root) access.
-2. Python 3.6+ installed on your system.
+2. Python 3.6+ installed on your system. (optional, only needed if using the python script)
 
 ### Running the Script
 
