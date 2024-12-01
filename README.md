@@ -27,7 +27,7 @@ The project aims to provide a centralized, evolving resource for Linux (and pote
 
 1. **Download the Script**:
    ```bash
-   curl -O https://raw.githubusercontent.com/natcoso9955/7Days-APC/main/afterlife-prereq-checker.sh
+   curl -O https://raw.githubusercontent.com/natcoso9955/7Days-APC/main/afterlife_prereq_checker.sh
    ```
 
 2. **Make the Script Executable**:
