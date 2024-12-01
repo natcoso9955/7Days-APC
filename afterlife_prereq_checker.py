@@ -3,9 +3,10 @@
 """
 7days-APC: Afterlife Prereq Checker
 
-This script checks if the necessary prerequisites for the Afterlife mod are installed on a Linux system.
-It ensures the system has a supported package manager, installs libgdiplus, and verifies the installation.
-It should be run as root for proper installation of dependencies.
+This script checks if the necessary prerequisites for the Afterlife mod are installed
+on a Linux system. It ensures the system has a supported package manager, installs 
+libgdiplus, and verifies the installation. It should be run as root for proper installation 
+of dependencies.
 """
 
 import os
@@ -54,7 +55,8 @@ def install_libgdiplus(pkg_manager):
         subprocess.run(command, check=True, shell=True)
         print(f"{GREEN}libgdiplus installed successfully!{NC}")
     except subprocess.CalledProcessError:
-        print(f"{RED}Failed to install libgdiplus. Please check your package manager and try again.{NC}")
+        # pylint: disable=locally-disabled, line-too-long
+        print(f"{RED}Failed to install libgdiplus.Please check your package manager and try again.{NC}")
         sys.exit(1)
 
 def verify_installation():
