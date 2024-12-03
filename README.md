@@ -6,18 +6,16 @@
 ![GitHub Created At](https://img.shields.io/github/created-at/natcoso9955/7Days-APC)
 ![GitHub last commit](https://img.shields.io/github/last-commit/natcoso9955/7Days-APC)
 
-
 **7days-APC** (7 Days Afterlife Prerequisite Checker) is a utility designed to help Linux users prepare their systems to run the **Afterlife** mod for the game *7 Days to Die*. This script automates the process of installing the required dependency, `libgdiplus`, which is essential for the mod to function properly on Linux.
 
-The project aims to provide a centralized, evolving resource for Linux (and potentially Windows) users who prefer running mods without relying on third-party launchers. As new challenges arise, this project will grow to address them.
+The project provides an evolving resource for Linux (and potentially Windows) users who prefer running mods without relying on third-party launchers.
 
 ---
 
 ## Features
 
 - **Automatic Dependency Installation**: Detects your package manager, then installs `libgdiplus`.
-- **Manual Installation Instructions**: Includes detailed commands for users who prefer a manual setup.
-- **Error Handling**: Provides meaningful error messages and guidance if the script cannot install the library.
+- **Documentation**: Includes detailed guides for manual setup and troubleshooting.
 - **Expandable**: Designed with scalability in mind, allowing for future additions such as mod auto-updaters and dependency management.
 
 ---
@@ -27,7 +25,7 @@ The project aims to provide a centralized, evolving resource for Linux (and pote
 ### Prerequisites
 
 1. A Linux system with administrative (root) access.
-2. Python 3.6+ installed on your system. (optional, only needed if using the python script)
+2. Python 3.6+ installed on your system (optional, only needed for the Python script).
 
 ### Running the Script
 
@@ -47,59 +45,17 @@ The project aims to provide a centralized, evolving resource for Linux (and pote
    ```
 
 4. **Follow On-Screen Prompts**:
-   - The script will identify your package manager, and attempt to install `libgdiplus`.
-   - If it encounters issues, refer to the [Manual Installation](#manual-installation) section below.
+   - The script will identify your package manager and attempt to install `libgdiplus`.
 
 ---
 
-## Manual Installation
+## Guides
 
-If you prefer to install `libgdiplus` manually or the script is unable to do so, follow the steps below based on your distribution.
+For detailed instructions and additional resources, see:
 
-### Step 1: Update Your Package Manager
-Always ensure your package manager is up to date:
-- **Debian/Ubuntu**:
-  ```bash
-  sudo apt update
-  ```
-- **CentOS/RHEL**:
-  ```bash
-  sudo yum update
-  ```
-- **Fedora**:
-  ```bash
-  sudo dnf update
-  ```
-- **Arch Linux**:
-  ```bash
-  sudo pacman -Syu
-  ```
-
-### Step 2: Install `libgdiplus`
-Use the appropriate command for your system:
-- **Debian/Ubuntu**:
-  ```bash
-  sudo apt install -y libgdiplus
-  ```
-- **CentOS/RHEL**:
-  ```bash
-  sudo yum install -y libgdiplus
-  ```
-- **Fedora**:
-  ```bash
-  sudo dnf install -y libgdiplus
-  ```
-- **Arch Linux**:
-  ```bash
-  sudo pacman -Sy libgdiplus
-  ```
-
-### Step 3: Verify Installation
-To confirm the library is installed:
-```bash
-ldconfig -p | grep libgdiplus
-```
-If `libgdiplus` appears in the output, the installation was successful.
+- [Manual Installation Guide](./guides/manual_installation.md): Step-by-step instructions for manually installing dependencies.
+- [Mod Installation Guide](./guides/mod_installation.md): Instructions for downloading and setting up mods like Afterlife.
+- [Troubleshooting Guide](./guides/troubleshooting.md): Common issues and their solutions.
 
 ---
 
@@ -113,19 +69,9 @@ This repository is a community effort to make mods like Afterlife accessible on 
 
 ---
 
-## Future Plans
+## Support the Afterlife Mod
 
-The 7days-APC project aims to evolve into a comprehensive utility for modding on Linux. Planned features include:
-
-1. **Mod Auto-Updater**: A script to automate downloading, extracting, and replacing mod files.
-2. **Comprehensive Prerequisite Checker**: Expand dependency checks beyond `libgdiplus` as new mod requirements emerge.
-3. **Windows Support**: Extend compatibility to Windows systems.
-
----
-
-## Manual Mod Installation Instructions (Planned)
-
-*This section will be expanded in the future to provide step-by-step instructions for downloading and installing the Afterlife mod manually via the command line.*
+This project would not be possible without the amazing **Afterlife Mod** and its community. Show your support by joining the [Afterlife Discord](https://discord.gg/2cfHGJQhBR).
 
 ---
 
