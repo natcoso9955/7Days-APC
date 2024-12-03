@@ -53,9 +53,9 @@ The project provides an evolving resource for Linux (and potentially Windows) us
 
 For detailed instructions and additional resources, see:
 
-- [Manual Installation Guide](./guides/manual_installation.md): Step-by-step instructions for manually installing dependencies.
-- [Mod Installation Guide](./guides/mod_installation.md): Instructions for downloading and setting up mods like Afterlife.
-- [Troubleshooting Guide](./guides/troubleshooting.md): Common issues and their solutions.
+- [Manual Installation Guide](./guides/prereq_manual_installation.md): Step-by-step instructions for manually installing dependencies.
+<!---- [Mod Installation Guide](./guides/mod_installation.md): Instructions for downloading and setting up mods like Afterlife.
+- [Troubleshooting Guide](./guides/troubleshooting.md): Common issues and their solutions.--->
 
 ---
 
